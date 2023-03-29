@@ -21,5 +21,27 @@
       <li>Philosophers don’t know if another philosopher is about to die.</li>
       <li>No need to say that philosophers should avoid dying!</li>
     </ul>
+    <h1>Global Rules</h1>
+	<p>You have to write a program for the mandatory part and another one for the bonus part (if you decide to do the bonus part). They both have to comply with the following rules:</p>
+	<ul>
+		<li>Global variables are forbidden!</li>
+		<li>Your(s) program(s) should take the following arguments:</li>
+		<ul>
+			<li>number_of_philosophers</li>
+			<li>time_to_die (in milliseconds)</li>
+			<li>time_to_eat (in milliseconds)</li>
+			<li>time_to_sleep (in milliseconds)</li>
+			<li>[number_of_times_each_philosopher_must_eat]</li>
+			<ul>
+				<li>number_of_philosophers: The number of philosophers and also the number of forks.</li>
+				<li>time_to_die (in milliseconds): If a philosopher didn’t start eating time_to_die milliseconds since the beginning of their last meal or the beginning of the simulation, they die.</li>
+				<li>time_to_eat (in milliseconds): The time it takes for a philosopher to eat. During that time, they will need to hold two forks.</li>
+				<li>time_to_sleep (in milliseconds): The time a philosopher will spend sleeping.</li>
+				<li>number_of_times_each_philosopher_must_eat (optional argument): If all philosophers have eaten at least number_of_times_each_philosopher_must_eat times, the simulation stops. If not specified, the simulation stops when a philosopher dies.</li>
+			</ul>
+		</ul>
+		<li>Each philosopher has a number ranging from 1 to number_of_philosophers.</li>
+		<li>Philosopher number 1 sits next to philosopher number number_of_philosophers. Any other philosopher number N sits between philosopher number N - 1 and philosopher number N + 1.</li>
+	</ul>
   </body>
 </html>
