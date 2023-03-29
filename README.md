@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Philosophers and Spaghetti</title>
-  </head>
   <body>
     <h1>Overview</h1>
     <p>Here are the things you need to know if you want to succeed this assignment:</p>
